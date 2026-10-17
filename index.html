@@ -8,7 +8,7 @@
     <!-- Подключение шрифта Cormorant Garamond -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -33,7 +33,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
@@ -46,10 +46,10 @@
         }
 
         .logo {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             object-fit: cover;
         }
 
@@ -63,18 +63,26 @@
         }
 
         p.subtitle {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             font-weight: 400;
             opacity: 0.85;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-transform: lowercase;
+        }
+
+        .description {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            opacity: 0.8;
+            margin-bottom: 32px;
+            font-style: italic;
         }
 
         .links-container {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 14px;
         }
 
         .link-btn {
@@ -82,7 +90,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding: 16px 24px;
+            padding: 15px 24px;
             border: 1px solid var(--text-color);
             border-radius: 40px;
             color: var(--text-color);
@@ -101,15 +109,15 @@
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.95rem;
             opacity: 0.5;
         }
 
         @media (max-width: 480px) {
             .logo {
-                width: 120px;
-                height: 120px;
+                width: 110px;
+                height: 110px;
             }
             h1.title {
                 font-size: 2.5rem;
@@ -117,8 +125,11 @@
             p.subtitle {
                 font-size: 1.2rem;
             }
+            .description {
+                font-size: 1.05rem;
+            }
             .link-btn {
-                padding: 14px 20px;
+                padding: 13px 20px;
                 font-size: 1.15rem;
             }
         }
@@ -133,6 +144,12 @@
         <!-- Заголовок и подзаголовок -->
         <h1 class="title">nicepoems</h1>
         <p class="subtitle">прекрасная поэзия</p>
+
+        <!-- Краткое описание -->
+        <p class="description">
+            поэзия о жизни, любви и чувствах.<br>
+            слова, которые обнимают.
+        </p>
 
         <!-- Ссылки на сообщества -->
         <div class="links-container">
