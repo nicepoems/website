@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicepoems — прекрасная поэзия</title>
+    
+    <!-- Подключение шрифта Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f4efea;
+            --text-color: #2e2a27;
+            --button-hover-bg: #2e2a27;
+            --button-hover-text: #f4efea;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Cormorant Garamond', serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 28px;
+            object-fit: cover;
+        }
+
+        h1.title {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 6px;
+            text-transform: lowercase;
+        }
+
+        p.subtitle {
+            font-size: 1.4rem;
+            font-weight: 400;
+            opacity: 0.85;
+            margin-bottom: 40px;
+            text-transform: lowercase;
+        }
+
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px 24px;
+            border: 1px solid var(--text-color);
+            border-radius: 40px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .link-btn:hover {
+            background-color: var(--button-hover-bg);
+            color: var(--button-hover-text);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.95rem;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+            h1.title {
+                font-size: 2.5rem;
+            }
+            p.subtitle {
+                font-size: 1.2rem;
+            }
+            .link-btn {
+                padding: 14px 20px;
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Логотип -->
+        <img src="logo.png" alt="nicepoems logo" class="logo">
+
+        <!-- Заголовок и подзаголовок -->
+        <h1 class="title">nicepoems</h1>
+        <p class="subtitle">прекрасная поэзия</p>
+
+        <!-- Ссылки на сообщества -->
+        <div class="links-container">
+            <a href="https://vk.ru/nicepoems" target="_blank" rel="noopener noreferrer" class="link-btn">ВКонтакте</a>
+            <a href="https://ok.ru/nicepoems" target="_blank" rel="noopener noreferrer" class="link-btn">Одноклассники</a>
+            <a href="https://max.ru/nicepoems" target="_blank" rel="noopener noreferrer" class="link-btn">MAX</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; nicepoems
+    </footer>
+
+</body>
+</html>
